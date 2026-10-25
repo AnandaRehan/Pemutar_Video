@@ -12,16 +12,17 @@ import org.robolectric.annotation.Config
 @Config(sdk = [34])
 class ExampleRobolectricTest {
 
-  /**@Test
+  @Test
   fun `read string from context`() {
     val context = ApplicationProvider.getApplicationContext<Context>()
     val appName = context.getString(R.string.app_name)
-    assertEquals("Template", appName)
-  }*/
+    assertEquals("Pemutar Video", appName)
+  }
+
   @Test
   fun readStringFromContext() {
     val context = ApplicationProvider.getApplicationContext<Context>()
     val appName = context.getString(R.string.app_name)
-    assertEquals("Template", appName)
+    assertEquals("Pemutar Video", appName)
   }
 }
